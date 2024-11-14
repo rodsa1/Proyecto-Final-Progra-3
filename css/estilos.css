@@ -1,0 +1,203 @@
+body {
+    
+    background-image: url('../img/fondo1.jpg');
+}
+
+.card {
+    border: 1px solid #c6d4d8;
+    border-radius: 8px;
+}
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* espacio entre tarjetas */
+}
+    /* Ajusta la altura de la card-body para que el botón quede alineado */
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.login-card {
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.Bienvenido{
+    color: aliceblue;
+}
+/*.card-header {
+    background-color: #007bff;
+    color: rgb(151, 147, 147);
+    font-weight: bold;
+}*/
+
+/* diseño fondo de pantalla y perfil */
+
+.list-group-item {
+    padding: 1rem;
+    text-align: center;
+}
+
+#resultado {
+    margin-top: 1.5rem;
+}
+
+.icono_estudiante {
+    width: 504px;
+    height: 64px;
+    background-image: url('../img/estudiante.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header h1 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.contenedor-de-roles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.roles {
+    background: rgb(240, 239, 239);
+    border-radius: 10px;
+    width: 300px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.rol-docente {
+    font-size: 3rem;
+    margin-bottom: 0,4rem;
+    width: 240px;
+    height: 64px;
+    background-image: url('../img/profesor.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.rol-estudiante {
+    font-size: 3rem;
+    margin-bottom: 0,4rem;
+    width: 240px;
+    height: 64px;
+    background-image: url('../img/estudiante.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.rol-administrador {
+    font-size: 3rem;
+    margin-bottom: 0,4rem;
+    width: 240px;
+    height: 64px;
+    background-image: url('../img/desarrollador.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+/*diseño del titulo*/
+.titulo {
+    font-size: 1.5rem;
+    color: #0a111b;
+    margin-bottom: 1rem;
+}
+/*diseño del subtitulo*/
+.subtitulo {
+    color: #394c68;
+    margin-bottom: 1.5rem;
+}
+
+.desglose {
+    list-style: none;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.desglose li {
+    padding: 0.5rem 0;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.desglose li:before {
+    content: "✓";
+    
+    margin-right: 0.5rem;
+}
+
+
+@media (max-width: 768px) {
+    .contenedor-de-roles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .roles {
+        width: 90%;
+    }
+}
+
+/* Tabla de agregar usuarios */
+
+/* Estilos generales */
+.hidden {
+    display: none;
+}
+
+/* Contenedor principal centrado vertical y horizontalmente */
+.contenedor-principal {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.table thead th {
+    border-top: none;
+    background-color: #007bff;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+.titulo_tabla{
+    color: white;
+}
+.fondo_de_tabla{
+background-color: antiquewhite;
+}
+#tablaUsuarios{
+    background-color: white;
+}
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .btn-action {
+        margin: 5px;
+    }
+    
+    .table-container {
+        padding: 10px;
+    }
+}

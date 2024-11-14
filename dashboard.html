@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo1.jpg" alt="Logo" style="height: 80px; width: auto; vertical-align: middle;">
+            Colegio</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <button class="btn btn-link nav-link" onclick="cerrarSesion()">Cerrar Sesión</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5" id="contenido">
+        <div class="text-center">
+            <h3 style="color: #010d20;">Bienvenido al Panel Principal</h3>
+            <p class="comentario">Seleccione una opción según su rol:</p>
+            <div id="roleOptions" class="d-flex justify-content-center"></div>
+        </div>
+    </div>
+
+
+    <div class="contenedor-de-roles">
+        <!-- Tarjeta de Estudiante -->
+        <a href="alumno.html" class="roles ">
+            <div class="rol-estudiante"></div>
+            <h2 class="titulo">Estudiante</h2>
+            <p class="subtitulo">Accede a tus cursos y recursos académicos</p>
+            <ul class="desglose">
+                <li>Ver calificaciones</li>
+                <li>Asistencia</li>
+                <li>Horarios</li>
+                <li>Profesores</li>
+            </ul>
+        </a>
+
+        <!-- Tarjeta de Docente -->
+        <a href="profesor.html" class="roles ">
+            <div class="rol-docente">
+
+            </div>
+            <h2 class="titulo">Docente</h2>
+            <p class="subtitulo">Gestiona tus cursos y estudiantes</p>
+            <ul class="desglose">
+                <li>Subir calificaciones</li>
+                <li>Asistencia</li>
+                <li>Estudiantes</li>
+                
+            </ul>
+        </a>
+
+        <!-- Tarjeta de Administrador -->
+        <a href="administrador.html" class="roles ">
+
+            <div class="rol-administrador"></div>
+            <h2 class="titulo">Administrador</h2>
+            <p class="subtitulo">Control total del sistema</p>
+            <ul class="desglose">
+                <li>Gestión de usuarios</li>
+                <li>Gestión de Materias</li>
+                <li>Administración general</li>
+            </ul>
+        </a>
+    </div>
+</div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

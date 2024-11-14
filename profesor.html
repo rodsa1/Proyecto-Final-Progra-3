@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profesor Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+        <a class="navbar-brand" href="dashboard.html">
+            <img src="img/logo1.jpg" alt="Logo" style="height: 80px; width: auto; vertical-align: middle;"> 
+            Inicio</a>
+        
+        <button class="btn btn-outline-danger ml-auto" onclick="cerrarSesion()">Cerrar Sesión</button>
+    </nav>
+
+    <div class="container mt-4">
+        <h3 class="text-center">Acciones de Profesor</h3>
+        <div class="card-deck mt-3">
+            <div class="card">
+                <div class="card-body text-center">
+                    <button onclick="listarAlumnos()" class="btn btn-primary">Listar Alumnos</button>
+                </div>
+            </div>
+            <div class="card">
+            <div class="card-body text-center">
+                <button onclick="listarProfesores()" class="btn btn-primary">Listar Profesores</button>
+            </div>
+            </div>
+            <div class="card">
+            <div class="card-body text-center">
+                <button onclick="ponerNotas()" class="btn btn-primary">Poner Notas</button>
+            </div>
+             </div>
+            <div class="card">
+                <div class="card-body text-center">
+                    <button onclick="gestionarNotas()" class="btn btn-primary">Gestionar Notas</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body text-center">
+                    <button onclick="gestionarFaltas()" class="btn btn-primary">Gestionar Faltas</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body text-center">
+                    <button onclick="listaAsistencia()" class="btn btn-primary">Lista de asistencia</button>
+                </div>
+            </div>
+        </div>
+        <div id="resultado" class="mt-4"></div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
