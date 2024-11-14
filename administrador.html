@@ -60,6 +60,35 @@
     </div>
 
 
+    </script>
+            <div id="resultado" class="mt-4"></div>
+        </div>
+        <!-- Panel de gestión (inicialmente oculto) -->
+            <div id="panelGestion" class="hidden mt-4">
+                <div class="nuevo usuario">
+                    <div class="card-body text-center">
+                         <button onclick="crearUsuario()" class="btn btn-primary">Crear Usuario</button>
+                                    
+                     </div>
+                 </div>
+                
+            <div class="mt-4">
+                <table class="table table-hover">
+                    <thead>
+                        <tr >
+                            <th class="titulo_tabla">ID</th>
+                            <th class="titulo_tabla">Nombre Completo</th>
+                            <th class="titulo_tabla">Email</th>
+                                            
+                        </tr>
+                    </thead>
+                    <tbody id="tablaUsuarios" >
+    <!-- Aquí se cargarán los usuarios -->
+                    </tbody>
+                </table>
+                    </div>
+                </div>
+            </div>
 
 
     <script src="js/scripts.js"></script>
